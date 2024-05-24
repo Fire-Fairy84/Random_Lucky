@@ -1,4 +1,5 @@
 html {
+  font-family: "Rye", serif;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -9,20 +10,31 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  background-color: #f14a25;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
 }
 
-.contenedor {
+#popUpInstrucciones {
+  /* background: linear-gradient(to bottom right, #f14a25, #bb0911); */
+  background: linear-gradient(70deg, #bb091291, #f14a259c);
+}
+
+
+.contenedor-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .contenedor {
   margin-top: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
-}
+} */
 
 .imagenes {
   display: flex;
@@ -52,10 +64,11 @@ img {
 }
 
 .titulo {
-  font-family: "Rye", serif;
+  margin: 2rem;
   font-size: large;
   max-width: 480px;
   text-shadow: 20px 15px 7px rgba(0, 0, 0, 0.397);
+  text-align: center;
 }
 
 @media (min-width: 992px) {
@@ -72,7 +85,6 @@ img {
     height: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #f14a25;
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: content;

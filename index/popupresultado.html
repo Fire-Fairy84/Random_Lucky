@@ -7,9 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<!-- jQuery Modal CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <title>Reinas del DOM</title>
   </head>
   <main>
+    <body>
+      <a href="#popUpInstrucciones" rel="modal:open">Abrir modal</a>
+      <div id="popUpInstrucciones" class="modal">
     <div class="contenedor">
       <div class="imagenes">
         <img src="../images/prov1.jpg" alt="foto1" class="foto1" />
@@ -20,4 +28,6 @@
       <button onclick="index_inicio.html" class="boton">VOLVER</button>
     </div>
   </main>
+  </div>
+</body>
 </html>

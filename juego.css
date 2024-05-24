@@ -1,5 +1,6 @@
 body {
     background-image: url('imagenes/fondo_juego_mobile.png');
+    font-family: "Rye", serif;
     max-width: 480px;
     height: 100%;
     object-fit: cover;
@@ -41,10 +42,14 @@ main {
     justify-content: flex-end;
 }
 
+.imagen-tarjeta img{
+    width: 5px;
+    z-index: -999;
+}
 
 
 @media (min-width: 992px) {
-    #example2 .col {
-        width: 25%;
+body {
+        background-image: url('imagenes/fondo_juego_escritorio.png');
     }
 }

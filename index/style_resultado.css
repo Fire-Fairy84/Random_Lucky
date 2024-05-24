@@ -1,4 +1,6 @@
 body {
+    font-family: "Rye", serif;
+font-size: small;
     max-width: 480px;
     height: 100%;
     background-image: url(../images/fondo_mobile.png);
@@ -37,6 +39,9 @@ img {
 }
 
 .boton {
+font-family: "Rye", serif;
+font-weight: 600;
+font-size: larger;
 background-color: #E8BF47; 
 border-radius: 100px;
 width: 7rem;
@@ -44,26 +49,6 @@ height: 7rem;
 align-self: center;
 }
 
-
-   /*display: flex;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    margin: -25px 0 0 -25px;
-} 
-*/
-
-/* .foto1 {
-    width: 125px;
-    height: 125px;
+@media (min-width: 992px) {
+    
 }
-
-.foto2 {
-    width: 125px;
-    height: 125px;
-}
-
-.foto3 {
-    width: 125;
-    height: 125;
-} */

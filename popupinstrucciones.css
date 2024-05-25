@@ -89,8 +89,11 @@ padding-left: 2%;
    #selector-imagenes{
     margin: 5px;
     background-color: #BC8F12;
-    content: Añadir imagen;
+    text-align: center;
+    /*content: Añadir imagen;*/
     color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
     border-radius: 20px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -101,35 +104,37 @@ padding-left: 2%;
     padding: 10px;
     }
     /* ESTILO DEL BOTÓN CON HOVER DE MOUSE */
-   /** #selector-imagenes:hover{
-      color: white;
-      background-color: #BC8F12;
+   #selector-imagenes:hover{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #BC8F12;
     }
-    */
 
-@media (min-width: 992px) {
+/* Media query para ordenador */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
 
 
     #popUpInstrucciones{
 
         background-color:#BC8F12;
         width: 100%;
-        height: 70%;
+        height: 50%;
+       
     }
     
     #instrucciones{
     background-color: #ddac23;
     display: flex;
-    width: 100%;
-    height: 5%;
     flex-direction: column;
+    width: 100%;
+    height: 25%;
     align-items: center;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    margin-top: 10%;
+    margin-bottom: 5%;
     border: 1px solid #353A49;
     border-radius: 20%;
     text-align: justify;
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     padding-top: 5%;
     padding-left: 5%;
@@ -176,10 +181,49 @@ padding-left: 2%;
         font-weight: bold;
     }
     #archivos{
-        width: 50%;
+        width: 39%;
         height: 20%;  
         
     }
-
+    
+    
+    #contenedorArchivo {
+    
+        overflow: hidden;
+      
+    
+    }
+     
+    #contenedorArchivo input[type=file] {
+        font-size: 10px;
+        position:absolute;
+        left: 20%;
+        top:183px;
+        opacity: 0;
+        }
+        /* ESTILO DEL BOTÓN */
+       #selector-imagenes{
+        margin: 5px;
+        background-color: #BC8F12;
+        text-align: center;
+        /*content: Añadir imagen;*/
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px;
+        border-radius: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 15px;
+        border: 2px solid black;
+        transition: all 0.3s ease 0s;
+        width: 12em;
+        padding: 10px;
+        }
+        /* ESTILO DEL BOTÓN CON HOVER DE MOUSE */
+       #selector-imagenes:hover{
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #BC8F12;
+        }
 
 }

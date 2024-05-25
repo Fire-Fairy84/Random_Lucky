@@ -71,7 +71,7 @@ img {
   text-align: center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   html {
     /* max-width: 700px;
     height: auto; */

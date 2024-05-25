@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinas del Dom</title>
+    <link rel="stylesheet" href="popupinstrucciones.css">
+    <!-- jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<!-- jQuery Modal CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    <a href="#popUpInstrucciones" rel="modal:open">Abrir modal</a>
+    <div id="popUpInstrucciones" class="modal">
+        <div id="instrucciones">
+            <p>Dale a examinar y escoge los participantes. Una vez en el juego, clickea en la palanca
+            o presiona  la tecla  espaciadora.</p>
+        </div>
+        <div id="contenedorArchivo">
+            <form id="selector-imagenes"> Añadir imagen
+                <input id="archivos" type="file" accept="image/jpeg, image/png" multiple>
+                
+            </form>
+        </div>
+        <div id="vistaPrevia">
+                <ul id="preview"></ul>
+        </div>
+        <div id="contenedorBoton">
+        <input id="boton" name="button" type="submit" >
+        </div>
+       
+    </div>
+    
+
+  <script src="popupinstrucciones.js" type="module"></script>
+</body>
+
+</html>

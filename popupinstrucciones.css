@@ -81,16 +81,15 @@ padding-left: 2%;
 #contenedorArchivo input[type=file] {
     font-size: 10px;
     position:absolute;
-    left: 20%;
-    top:183px;
-    opacity: 0;
+    left: 14%;
+    top:190px;
+   opacity: 0;
     }
     /* ESTILO DEL BOTÓN */
    #selector-imagenes{
     margin: 5px;
     background-color: #BC8F12;
     text-align: center;
-    /*content: Añadir imagen;*/
     color: black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
@@ -119,6 +118,7 @@ padding-left: 2%;
         background-color:#BC8F12;
         width: 100%;
         height: 50%;
+        
        
     }
     
@@ -155,6 +155,7 @@ padding-left: 2%;
         margin-bottom: 5%;
         max-height: 300px; 
         overflow-y: auto; 
+    
     }
     #vistaPrevia li {
         list-style: none; /* Elimina los puntos de la lista para todos los elementos <li> */
@@ -185,6 +186,8 @@ padding-left: 2%;
         height: 20%;  
         
     }
+
+
     
     
     #contenedorArchivo {
@@ -197,16 +200,15 @@ padding-left: 2%;
     #contenedorArchivo input[type=file] {
         font-size: 10px;
         position:absolute;
-        left: 20%;
+        left: 10%;
         top:183px;
-        opacity: 0;
+       opacity: 0;
         }
         /* ESTILO DEL BOTÓN */
        #selector-imagenes{
         margin: 5px;
         background-color: #BC8F12;
         text-align: center;
-        /*content: Añadir imagen;*/
         color: black;
         font-family: 'Courier New', Courier, monospace;
         font-size: 12px;

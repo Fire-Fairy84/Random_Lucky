@@ -1,12 +1,11 @@
 body {
     background-image: url('imagenes/fondo_juego_mobile.png');
     font-family: "Rye", serif;
-    max-width: 480px;
     height: 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     margin: 0;
     padding: 0;
+    background-size: cover; 
 }
 
 .navbar {
@@ -47,6 +46,11 @@ main {
 .imagen-tarjeta img {
     width: 5px;
     z-index: -999;
+}
+
+.maquina {
+    margin-top: -30px;
+    margin-left: 50px;
 }
 
 

@@ -1,6 +1,6 @@
 let filesList = [];
 const fileInputMulti = document.querySelector("#archivos");
-const multiSelectorUniqPreview = document.querySelector("#preview");
+const multiSelectorUniqPreview = document.querySelector("#lista");
 
 
 function getIndexOfFileList(name, list) {
@@ -20,7 +20,7 @@ function renderPreviews(currentFileList, target) {
     currentFileList.forEach(file => {
         const image = document.createElement("img");
         image.src = URL.createObjectURL(file); // Crea una URL para la imagen
-        image.classList.add("preview-image"); // Agrega una clase para estilos opcionales
+        image.classList.add("imagen_previa"); // Agrega una clase para estilos opcionales
         const myButtonRemove = document.createElement("button");
         myButtonRemove.textContent = "X";
         myButtonRemove.addEventListener("click", () => {

@@ -15,12 +15,12 @@ body {
   object-fit: cover;
 }
 
-#popUpInstrucciones {
+#popup_instrucciones {
   /* background: linear-gradient(to bottom right, #f14a25, #bb0911); */
   background: linear-gradient(70deg, #bb091291, #f14a259c);
 }
 
-.contenedor-boton {
+.contenedor_boton {
   display: flex;
   align-items: center;
   justify-content: center;

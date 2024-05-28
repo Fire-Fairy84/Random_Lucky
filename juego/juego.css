@@ -1,5 +1,5 @@
 body {
-    background-image: url('imagenes/fondo_juego_mobile.png');
+    background-image: url('../Imagenes/fondo_mobile.png');
     font-family: "Rye", serif;
     height: 100%;
     background-repeat: no-repeat; 
@@ -26,7 +26,7 @@ body {
 }
 
 button,
-#button {
+#boton {
     border: none;
     background-color: transparent;
 }
@@ -37,13 +37,13 @@ main {
     justify-content: center;
 }
 
-#button {
+#boton {
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
 }
 
-.imagen-tarjeta img {
+.imagen_tarjeta img {
     width: 5px;
     z-index: -999;
 }
@@ -60,7 +60,7 @@ main {
     }
 
     body {
-        background-image: url('imagenes/fondo_juego_escritorio.png');
+        background-image: url('../Imagenes/fondo_escritorio.png');
         width: 100%;
         max-width: 1200px;
     }

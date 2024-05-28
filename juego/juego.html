@@ -4,25 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./juego.css">
+    <link rel="stylesheet" href="juego.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
    <title>Reinas del Dom</title>
 </head>
 <body>
     <header id="header">
         <nav class="navbar">
-            <li><a href="index.html"><img src="./imagenes/flecha.svg" alt="flecha"></a></li>
-            <li><img class="logo" src="./imagenes/logo.svg" alt="logo"></li>
-            <li><button id="button" onclick="instrucciones"><img src="./imagenes/info.svg" alt="info"></input></li>
+            <li><a href="../inicio/inicio.html"><img src="../Imagenes/complementos/flecha.svg" alt="flecha"></a></li>
+            <li><img class="logo" src="../Imagenes/complementos/logo.svg" alt="logo"></li>
+            <li><button id="button" onclick="instrucciones"><img src="../Imagenes/complementos/info.svg" alt="info"></input></li>
         </nav>
     </header>
     <main>
+        <div class="popup_contenedor"></div>
+        <element onchange="integracion_pop_instrucciones.js"></element>
         <audio id="miAudio">
             <source src="sonido-tragaperras.mp3" type="audio/mpeg">
         </audio>
-        <img onclick="cambiarImagen" class="maquina" src="./imagenes/maquinaArriba.png" alt="maquinaArriba">
+        <img onclick="cambiarImagen" class="maquina" src="../Imagenes/complementos/maquinaArriba.png" alt="maquinaArriba">
         <section class="tarjetas" >
             <option value="compis" class="tarjeta"><img src="./imagenes/compis/Ana.png" alt="compis"></option>
             <option value="iconos" class="tarjeta"><img src="./imagenes/iconos/veneno.png" alt="iconos"></option>

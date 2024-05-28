@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Rye", serif;
+}
+
+body {
+  background-image: url("/imagenes/image36.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton_jugar {
+  background: #e8be46;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #e8be46;
+}
+
+.boton {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-image: url("imagenes/image35.jpg");
+  }
+
+  .boton_jugar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .boton {
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  img {
+    width: 300px;
+  }
+}

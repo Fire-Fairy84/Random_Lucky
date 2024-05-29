@@ -5,7 +5,11 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   background-image: url("../Imagenes/fondos/fondo_movil_inicio.jpg");
+=======
+  background-image: url("../Imagenes/image36.jpg");
+>>>>>>> 6fa397c6443ffedc7c646ae0571d5571b2f71798
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,7 +43,11 @@ h1 {
 
 @media (min-width: 992px) and (max-width: 1200px) {
   body {
+<<<<<<< HEAD
     background-image: url("../Imagenes/fondos/fondo_escritorio_inicio.jpg");
+=======
+    background-image: url("../Imagenes/image35.jpg");
+>>>>>>> 6fa397c6443ffedc7c646ae0571d5571b2f71798
   }
 
   .boton_jugar {

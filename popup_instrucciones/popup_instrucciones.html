@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reinas del Dom</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="../popup_instrucciones/popup_instrucciones.css">
+=======
+    <link rel="stylesheet" href="popup_instrucciones.css">
+>>>>>>> 6fa397c6443ffedc7c646ae0571d5571b2f71798
     <!-- jQuery-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <!-- jQuery Modal -->
@@ -13,29 +17,29 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
-    <a href="#popUpInstrucciones" rel="modal:open">Abrir modal</a>
-    <div id="popUpInstrucciones" class="modal">
+    <a href="#popup_instrucciones" rel="modal:open">Abrir modal</a>
+    <div id="popup_instrucciones" class="modal">
         <div id="instrucciones">
             <p>Dale a examinar y escoge los participantes. Una vez en el juego, clickea en la palanca
-            o presiona  la tecla  espaciadora.</p>
+            o presiona la tecla espaciadora.</p>
         </div>
-        <div id="contenedorArchivo">
-            <form id="selector-imagenes"> Añadir imagen
+        <div id="contenedor_archivo">
+            <form id="selector_imagenes"> Añadir imagen
                 <input id="archivos" type="file" accept="image/jpeg, image/png" multiple>
                 
             </form>
         </div>
-        <div id="vistaPrevia">
-                <ul id="preview"></ul>
+        <div id="vista_previa">
+                <ul id="lista"></ul>
         </div>
-        <div id="contenedorBoton">
+        <div id="contenedor_boton">
         <input id="boton" name="button" type="submit" >
         </div>
        
     </div>
     
 
-  <script src="popupinstrucciones.js" type="module"></script>
+  <script src="popup_instrucciones.js" type="module"></script>
 </body>
 
 </html>

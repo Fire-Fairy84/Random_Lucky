@@ -15,9 +15,8 @@ body {
   object-fit: cover;
 }
 
-#popup_instrucciones {
-  /* background: linear-gradient(to bottom right, #f14a25, #bb0911); */
-  background: linear-gradient(70deg, #bb091291, #f14a259c);
+#popup_resultado {
+  background: linear-gradient(70deg, #ff2e00, #ffd7ca);
 }
 
 .contenedor_boton {
@@ -33,12 +32,23 @@ body {
   align-items: center;
 }
 
+.ancho {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
 img {
   width: 30%;
   justify-content: center;
   align-items: center;
   border-radius: 5%;
-  box-shadow: 20px 15px 7px rgba(0, 0, 0, 0.397);
+}
+
+.foto1,
+foto3,
+.boton {
+  box-shadow: 20px 15px 7px rgba(0, 0, 0, 0.205);
 }
 
 .boton {
@@ -50,7 +60,6 @@ img {
   width: 7rem;
   height: 7rem;
   align-self: center;
-  box-shadow: 20px 15px 7px rgba(0, 0, 0, 0.397);
   border: none;
 }
 
@@ -58,7 +67,6 @@ img {
   margin: 2rem;
   font-size: large;
   max-width: 480px;
-  text-shadow: 20px 15px 7px rgba(0, 0, 0, 0.397);
   text-align: center;
 }
 
@@ -66,5 +74,4 @@ img {
   body {
     max-width: 992px;
   }
-
 }

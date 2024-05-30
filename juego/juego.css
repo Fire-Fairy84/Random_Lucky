@@ -40,8 +40,6 @@ main {
 }
 
 #boton_info {
-    display: flex;
-    justify-content: flex-end;
     cursor: pointer;
 }
 
@@ -56,7 +54,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #e8be46;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 
@@ -84,14 +82,14 @@ main {
     }
 
     .navbar img {
-        margin: 1rem 1rem 0;
+        margin: 2rem 1rem 0;
         width: 12rem;
         height: 15rem;
     }
 
     li .logo {
-        width: 68%;
-        margin-left: 60px;
+        width: 40%;
+        margin-left: 120px;
     }
 
     .maquina {
@@ -103,7 +101,8 @@ main {
     .tarjetas {
         width: 45%;
         height: 150px;
-        top: 650px;
+        top: 550px;
+        margin-right: 3px;
     }
 
     .tarjeta img {

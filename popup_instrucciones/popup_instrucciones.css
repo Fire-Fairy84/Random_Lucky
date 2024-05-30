@@ -9,15 +9,15 @@
   background-color: #ddac23;
   display: flex;
   width: 100%;
-  height: 25%;
+  height: 28%;
   flex-direction: column;
   align-items: center;
   margin-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   border: 1px solid #353a49;
   border-radius: 20%;
   text-align: justify;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Courier New", Courier, monospace;
   padding-top: 5%;
   padding-left: 5%;
@@ -25,30 +25,33 @@
   padding-left: 2%;
 }
 
-#contenedor_archivo {
+#formulario {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  top: 300px;
+  align-items: flex-start;
+}
+
+#archivos {
   margin-bottom: 5%;
-  border-radius: 20%;
+  width: 47%;
+  height: 35%;
+  background-color: #bc8f12;
 }
 
 #vista_previa {
   background-color: #ffffff;
   display: flex;
   width: 100%;
-  height: 40%;
+  height: 100px;
   flex-direction: row;
   margin-bottom: 5%;
-  max-height: 300px;
   overflow-y: auto;
 }
 
-#vista_previa li {
+#vista_previa ul {
   list-style: none;
-  /* Elimina los puntos de la lista para todos los elementos <li> */
-}
-
-#contenedor_boton {
-  display: flex;
-  justify-content: center;
 }
 
 .imagen_previa {
@@ -60,59 +63,23 @@
   /* Espacio entre imágenes */
 }
 
-#boton {
-  width: 30%;
-  height: 20%;
-  border: none;
-  background-color: black;
-  color: white;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-#archivos {
-  width: 39%;
-  height: 20%;
-}
-
-#contenedor_archivo {
-  overflow: hidden;
-}
-
-#contenedor_archivo input[type="file"] {
-  font-size: 10px;
-  position: absolute;
-  left: 14%;
-  top: 190px;
-  opacity: 0;
-}
-
-/* ESTILO DEL BOTÓN */
-#selector_imagenes {
-  margin: 5px;
-  background-color: #bc8f12;
-  text-align: center;
-  color: black;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
-  border-radius: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 15px;
-  border: 2px solid black;
-  transition: all 0.3s ease 0s;
-  width: 12em;
-  padding: 10px;
-}
-
 /* Media query para ordenador */
 @media (min-width: 992px) and (max-width: 1200px) {
   #popup_instrucciones {
-    height: 75%;
+    height: 70%;
   }
 
-  #contenedor_archivo input[type="file"] {
-    left: 10%;
-    top: 183px;
+  #instrucciones {
+    font-size: 20px;
+    height: 32%;
   }
+
+  #archivos {
+    width: 30%;
+    height: 15%;
+  }
+  #vista_previa {
+    height:180px ;
+  }
+
 }

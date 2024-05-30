@@ -47,7 +47,7 @@ main {
 
 .tarjetas {
     position: absolute;
-    top: 315px;
+    top: 350px;
     z-index: -1;
     width: 200px;
     height: 100px;

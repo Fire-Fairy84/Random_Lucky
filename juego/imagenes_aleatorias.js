@@ -7,7 +7,7 @@ const imagen2 = document.getElementById("imagen2");
 const imagen3 = document.getElementById("imagen3");
 const resultado = document.getElementById("resultado");
 
-const compis = ["compañera1.png", "compañera2.png", "compañera3.png"];
+const compis = [];
 const simbolos = [
   "anillo.png",
   "beso.png",

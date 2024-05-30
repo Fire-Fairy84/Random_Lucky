@@ -5,36 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="juego.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet"> 
-   <title>Reinas del Dom</title>
+    <link rel="stylesheet" href="../popup_instrucciones/popup_instrucciones.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <title>Reinas del Dom</title>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- jQuery Modal JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 </head>
+
 <body>
     <header id="header">
         <nav class="navbar">
-            <li><a href="../inicio/inicio.html"><img src="../Imagenes/flecha.svg" alt="flecha"></a></li>
-            <li><img class="logo" src="../Imagenes/logo.svg" alt="logo"></li>
-            <li><button id="boton" onclick="instrucciones"><img src="../Imagenes/info.svg" alt="info"></input></li>
+            <li><a href="inicio.html"><img src="../Imagenes/complementos/flecha.svg" alt="flecha"></a></li>
+            <li><img class="logo" src="../Imagenes/complementos/logo.svg" alt="logo"></li>
+            <li><button id="boton_juego" onclick="instrucciones"><img src="../Imagenes/complementos/info.svg" alt="info"></button></li>
         </nav>
     </header>
     <main>
         <audio id="miAudio">
             <source src="sonido-tragaperras.mp3" type="audio/mpeg">
         </audio>
-        <img onclick="cambiarImagen" class="maquina" src="../imagenes/maquinaArriba.png" alt="maquinaArriba">
-        <section class="tarjetas" >
+        <img onclick="cambiarImagen" class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png" alt="maquinaArriba">
+        <section class="tarjetas">
             <option value="compis" class="tarjeta"><img src="../Imagenes/compis/Ana.png" alt="compis"></option>
             <option value="iconos" class="tarjeta"><img src="../Imagenes/iconos/veneno.png" alt="iconos"></option>
             <option value="famosos" class="tarjeta"><img src="../Imagenes/famosos/Danny.png" alt="famosos"></option>
         </section>
-        <!-- <div class="tarjetas">
-            <div id="imagen1" class="imagen_tarjeta"><img src="./imagenes/compis/" alt="compis"></div>
-            <div id="imagen2" class="imagen_tarjeta"><img src="./imagenes/iconos/veneno.png" alt="iconos"></div>
-            <div id="imagen3" class="imagen_tarjeta"><img src="./imagenes/famosos/Danny.png" alt="famosos"></div>
-        </div> -->
-        </main>
-    <script src="juego.js"></script>
+    </main>
+
+    <!-- Modal -->
+    <div id="popup_instrucciones" class="modal">
+        <div id="instrucciones">
+            <p>Dale a examinar y escoge los participantes. Una vez en el juego, clickea en la palanca
+                o presiona la tecla espaciadora.</p>
+        </div>
+        <div id="contenedor_archivo">
+            <form id="selector_imagenes"> Añadir imagen
+                <input id="archivos" type="file" accept="image/jpeg, image/png" multiple>
+            </form>
+        </div>
+        <div id="vista_previa">
+            <ul id="lista"></ul>
+        </div>
+        <div id="contenedor_boton">
+            <input id="boton" name="button" type="submit">
+        </div>
+    </div>
+
+    <script src="../popup_instrucciones/popup_instrucciones.js" type="module"></script>
+    <script src="popup.js"></script>
 </body>
 
 </html>

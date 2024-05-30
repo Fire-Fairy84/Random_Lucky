@@ -2,6 +2,7 @@
   background-color: #bc8f12;
   width: 100%;
   height: 70%;
+  display: none;
 }
 
 #instrucciones {
@@ -23,10 +24,12 @@
   padding-right: 2%;
   padding-left: 2%;
 }
+
 #contenedor_archivo {
   margin-bottom: 5%;
   border-radius: 20%;
 }
+
 #vista_previa {
   background-color: #ffffff;
   display: flex;
@@ -37,8 +40,10 @@
   max-height: 300px;
   overflow-y: auto;
 }
+
 #vista_previa li {
-  list-style: none; /* Elimina los puntos de la lista para todos los elementos <li> */
+  list-style: none;
+  /* Elimina los puntos de la lista para todos los elementos <li> */
 }
 
 #contenedor_boton {
@@ -47,9 +52,12 @@
 }
 
 .imagen_previa {
-  max-width: 10%; /* Cambia según tus preferencias */
-  max-height: 10%; /* Cambia según tus preferencias */
-  margin-right: 1%; /* Espacio entre imágenes */
+  max-width: 10%;
+  /* Cambia según tus preferencias */
+  max-height: 10%;
+  /* Cambia según tus preferencias */
+  margin-right: 1%;
+  /* Espacio entre imágenes */
 }
 
 #boton {
@@ -61,6 +69,7 @@
   border-radius: 4px;
   font-weight: bold;
 }
+
 #archivos {
   width: 39%;
   height: 20%;
@@ -77,6 +86,7 @@
   top: 190px;
   opacity: 0;
 }
+
 /* ESTILO DEL BOTÓN */
 #selector_imagenes {
   margin: 5px;
@@ -94,6 +104,7 @@
   width: 12em;
   padding: 10px;
 }
+
 /* ESTILO DEL BOTÓN CON HOVER DE MOUSE */
 #selector_imagenes:hover {
   color: black;
@@ -128,10 +139,12 @@
     padding-right: 2%;
     padding-left: 2%;
   }
+
   #contenedor_archivo {
     margin-bottom: 5%;
     border-radius: 20%;
   }
+
   #vista_previa {
     background-color: #ffffff;
     display: flex;
@@ -142,8 +155,10 @@
     max-height: 300px;
     overflow-y: auto;
   }
+
   #vista_previa li {
-    list-style: none; /* Elimina los puntos de la lista para todos los elementos <li> */
+    list-style: none;
+    /* Elimina los puntos de la lista para todos los elementos <li> */
   }
 
   #contenedor_boton {
@@ -152,9 +167,12 @@
   }
 
   .imagen_previa {
-    max-width: 10%; /* Cambia según tus preferencias */
-    max-height: 10%; /* Cambia según tus preferencias */
-    margin-right: 1%; /* Espacio entre imágenes */
+    max-width: 10%;
+    /* Cambia según tus preferencias */
+    max-height: 10%;
+    /* Cambia según tus preferencias */
+    margin-right: 1%;
+    /* Espacio entre imágenes */
   }
 
   #boton {
@@ -166,6 +184,7 @@
     border-radius: 4px;
     font-weight: bold;
   }
+
   #archivos {
     width: 39%;
     height: 20%;
@@ -182,6 +201,7 @@
     top: 183px;
     opacity: 0;
   }
+
   /* ESTILO DEL BOTÓN */
   #selector_imagenes {
     margin: 5px;
@@ -199,6 +219,7 @@
     width: 12em;
     padding: 10px;
   }
+
   /* ESTILO DEL BOTÓN CON HOVER DE MOUSE */
   #selector_imagenes:hover {
     color: black;

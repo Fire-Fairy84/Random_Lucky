@@ -1,5 +1,5 @@
 body {
-    background-image: url('../Imagenes/fondo_mobile.png');
+    background-image: url('../Imagenes/fondos/fondo_movil_juego.png');
     font-family: "Rye", serif;
     height: 100%;
     background-repeat: no-repeat; 
@@ -26,7 +26,7 @@ body {
 }
 
 button,
-#boton {
+#boton_juego {
     border: none;
     background-color: transparent;
 }
@@ -37,7 +37,7 @@ main {
     justify-content: center;
 }
 
-#boton {
+#boton_juego {
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
@@ -60,7 +60,7 @@ main {
     }
 
     body {
-        background-image: url('../Imagenes/fondo_escritorio.png');
+        background-image: url('../Imagenes/fondos/fondo_escritorio_juego.png');
         width: 100%;
         max-width: 1200px;
     }

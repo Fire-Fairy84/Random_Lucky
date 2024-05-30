@@ -1,60 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full ">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="juego.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-   <title>Reinas del Dom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>Reinas del Dom</title>
 </head>
-<body>
+
+<body
+    class="bg-img-juego-movil h-full bg-cover bg-no-repeat lg:bg-img-juego-escritorio">
     <header id="header">
-        <nav class="navbar">
-<<<<<<< HEAD
-            <li><a href="../inicio/inicio.html"><img src="../Imagenes/complementos/flecha.svg" alt="flecha"></a></li>
-            <li><img class="logo" src="../Imagenes/complementos/logo.svg" alt="logo"></li>
-            <li><button id="button" onclick="instrucciones"><img src="../Imagenes/complementos/info.svg" alt="info"></input></li>
+        <nav class="h-[18vh] w-full flex flex-row justify-between list-none items-center mb-8 lg:h-[25vh] ">
+            <li>
+                <a href="../inicio/inicio.html"><img class="img" src="../Imagenes/complementos/flecha.svg" alt="flecha">
+                </a>
+            </li>
+            <li class="w-[68%] ml-[60px]">
+                <img class="logo img" src="../Imagenes/complementos/logo.svg" alt="logo">
+            </li>
+            <li class="flex justify-end cursor-pointer">
+                <button id="border-none bg-transparent" onclick="instrucciones">
+                    <img class="img" src="../Imagenes/complementos/info.svg" alt="info">
+                </button>
+            </li>
         </nav>
     </header>
-    <main>
+    <main class="top-[150px] flex justify-center">
         <div class="popup_contenedor"></div>
         <element onchange="integracion_pop_instrucciones.js"></element>
         <audio id="miAudio">
             <source src="sonido-tragaperras.mp3" type="audio/mpeg">
         </audio>
-        <img onclick="cambiarImagen" class="maquina" src="../Imagenes/complementos/maquinaArriba.png" alt="maquinaArriba">
-=======
-            <li><a href="index.html"><img src="../Imagenes/flecha.svg" alt="flecha"></a></li>
-            <li><img class="logo" src="../Imagenes/logo.svg" alt="logo"></li>
-            <li><button id="boton" onclick="instrucciones"><img src="../Imagenes/info.svg" alt="info"></input></li>
+        <img onclick="cambiarImagen" class="mt-[-30px] ml-[20px] lg:w-[55%]" src="../Imagenes/complementos/maquinaArriba.png"
+            alt="maquinaArriba">
+        <li><a href="index.html"><img src="../Imagenes/flecha.svg" alt="flecha"></a></li>
+        <li><img class="logo" src="../Imagenes/logo.svg" alt="logo"></li>
+        <li><button id="boton" onclick="instrucciones"><img src="../Imagenes/info.svg" alt="info"></input></li>
         </nav>
-    </header>
-    <main>
-<<<<<<< HEAD
-        <audio id="miAudio">
-            <source src="sonido-tragaperras.mp3" type="audio/mpeg">
-        </audio>
-        <img onclick="cambiarImagen" class="maquina" src="./imagenes/maquinaArriba.png" alt="maquinaArriba">
-=======
-        <img onclick="cambiar_imagen" class="maquina" src="../Imagenes/maquinaArriba.png" alt="maquinaArriba">
->>>>>>> 663c4f400d457bd3b22e375b43ac6b5ba874f251
->>>>>>> 6fa397c6443ffedc7c646ae0571d5571b2f71798
-        <section class="tarjetas" >
-            <option value="compis" class="tarjeta"><img src="../Imagenes/compis/Ana.png" alt="compis"></option>
-            <option value="iconos" class="tarjeta"><img src="../Imagenes/iconos/veneno.png" alt="iconos"></option>
-            <option value="famosos" class="tarjeta"><img src="../Imagenes/famosos/Danny.png" alt="famosos"></option>
-        </section>
-        <!-- <div class="tarjetas">
+        </header>
+        <main>
+            <audio id="miAudio">
+                <source src="sonido-tragaperras.mp3" type="audio/mpeg">
+            </audio>
+            <img onclick="cambiar_imagen" class="maquina" src="../Imagenes/maquinaArriba.png" alt="maquinaArriba">
+            <section class="tarjetas">
+                <option value="compis" class="tarjeta"><img src="../Imagenes/compis/Ana.png" alt="compis"></option>
+                <option value="iconos" class="tarjeta"><img src="../Imagenes/iconos/veneno.png" alt="iconos"></option>
+                <option value="famosos" class="tarjeta"><img src="../Imagenes/famosos/Danny.png" alt="famosos"></option>
+            </section>
+            <!-- <div class="tarjetas">
             <div id="imagen1" class="imagen_tarjeta"><img src="./imagenes/compis/" alt="compis"></div>
             <div id="imagen2" class="imagen_tarjeta"><img src="./imagenes/iconos/veneno.png" alt="iconos"></div>
             <div id="imagen3" class="imagen_tarjeta"><img src="./imagenes/famosos/Danny.png" alt="famosos"></div>
         </div> -->
         </main>
-    <script src="juego.js"></script>
+        <script src="juego.js"></script>
 </body>
 
 </html>

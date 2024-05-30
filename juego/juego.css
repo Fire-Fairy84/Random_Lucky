@@ -43,9 +43,14 @@ main {
     cursor: pointer;
 }
 
-.tarjeta img {
-    width: 5px;
-    z-index: -999;
+.tarjeta {
+    position: absolute;
+    top: 20;
+}
+
+.tarjeta img{
+    width: 500px;
+    z-index: 999;
 }
 
 .maquina {

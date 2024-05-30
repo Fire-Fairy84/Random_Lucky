@@ -33,7 +33,6 @@
 //     });
 // });
 
-
 //   const simbolos = [
 //     "anillo.png",
 //     "beso.png",
@@ -61,50 +60,64 @@
 //     return imagenes[indiceAleatorio];
 //   }
 
+let compis = [];
 
- document.addEventListener("DOMContentLoaded", () => {
-   const archivos_input = document.getElementById("archivos");
-   const imagen1 = document.getElementById("imagen1");
-   const imagen2 = document.getElementById("imagen2");
-   const imagen3 = document.getElementById("imagen3");
-   const resultado = document.getElementById("resultado");
+document.addEventListener("DOMContentLoaded", () => {
+  const archivos_input = document.getElementById("archivos");
+  const imagen1 = document.getElementById("imagen_compis");
+  const imagen2 = document.getElementById("imagen_iconos");
+  const imagen3 = document.getElementById("imagen_famosos");
+  const resultado = document.getElementById("resultado");
 
-   let compis = [ ];
+  archivos_input.addEventListener("change", (event) => {
+    compis = Array.from(event.target.files);
 
-   archivos_input.addEventListener("change", (event) => {
-     const archivos = Array.from(event.target.files);
-     compis = compis.concat(archivos);
-     console.log(compis);
+    const reader = new FileReader();
 
-     // Mostrar imágenes aleatorias
-     imagen1.src = imagenesAleatorias(compis);
-     imagen2.src = imagenesAleatorias(simbolos);
-     imagen3.src = imagenesAleatorias(famosos);
-   });
+    reader.onload = function (e) {
+      imagen1.src = e.target.result;
+    };
 
-   const simbolos = [
-     "anillo.png",
-     "beso.png",
-     "cama.png",
-     "cuchillo.png",
-     "veneno.png",
-     "viaje.png",
-   ];
-   const famosos = [
-     "Angelina.png",
-     "Danny.png",
-     "David.png",
-     "Donatella.png",
-     "JuanCar.png",
-     "Lady.png",
-     "Meryl.png",
-     "Pedro.png",
-     "Santiago.png",
-     "Vigo.png",
-   ];
+    const image1src = imagenesAleatorias(compis);
+    reader.readAsDataURL(compis[image1src]);
 
-   function imagenesAleatorias(imagenes) {
-     const indiceAleatorio = Math.floor(Math.random() * imagenes.length);
-     return imagenes[indiceAleatorio].name; // Cambiar a 'name' si deseas obtener el nombre del archivo
-   }
- } );
+    reader.onloadend = function () {
+      imagen1.src = reader.result;
+    };
+
+    // Mostrar imágenes aleatorias
+    imagen2.src = "../Imagenes/iconos/" + imagenesAleatorias(simbolos);
+    imagen3.src = "../Imagenes/famosos/" + imagenesAleatorias(famosos);
+  });
+
+  const simbolos = [
+    "anillo.png",
+    "beso.png",
+    "cama.png",
+    "cuchillo.png",
+    "veneno.png",
+    "viaje.png",
+  ];
+
+  const famosos = [
+    "Angelina.png",
+    "Danny.png",
+    "David.png",
+    "Donatella.png",
+    "JuanCar.png",
+    "Lady.png",
+    "Meryl.png",
+    "Pedro.png",
+    "Santiago.png",
+    "Vigo.png",
+  ];
+
+  function imagenesAleatorias(imagenes) {
+    const indiceAleatorio = Math.floor(Math.random() * imagenes.length);
+    const imagen = imagenes[indiceAleatorio];
+
+    if (typeof imagen === "string") return imagen;
+
+    return indiceAleatorio;
+  }
+});

@@ -43,7 +43,7 @@ main {
     cursor: pointer;
 }
 
-.imagen_tarjeta img {
+.tarjeta img {
     width: 5px;
     z-index: -999;
 }

@@ -8,4 +8,23 @@ function cambiarImagen() {
 // Agrega un event listener para el clic en la imagen
 document
   .getElementById("imagenCambiante")
-  .addEventListener("click", cambiarImagen);
+    .addEventListener( "click", cambiarImagen );
+  
+
+    const imagen = document.getElementById("maquinaArriba");
+    const audio = document.getElementById("miAudio");
+
+    // Añadir evento de clic a la imagen
+    imagen.addEventListener("click", () => {
+      // Cambiar la fuente de la imagen
+      imagen.src = "maquinaAbajo.svg";
+
+      // Reproducir el audio
+      audio.play();
+    } );
+    
+    const cambiarImagen = () => {
+      document.getElementById("maquinaArriba").src =
+        "./imagenes/maquinaAbajo.jpg";
+    };
+

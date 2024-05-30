@@ -25,19 +25,22 @@
         <nav class="navbar">
             <li><a href="inicio.html"><img src="../Imagenes/complementos/flecha.svg" alt="flecha"></a></li>
             <li><img class="logo" src="../Imagenes/complementos/logo.svg" alt="logo"></li>
-            <li><button id="boton_juego" onclick="instrucciones"><img src="../Imagenes/complementos/info.svg" alt="info"></button></li>
+            <li><button id="boton_juego" onclick="instrucciones"><img src="../Imagenes/complementos/info.svg"
+                        alt="info"></button></li>
         </nav>
     </header>
     <main>
         <audio id="miAudio">
-            <source src="sonido-tragaperras.mp3" type="audio/mpeg">
+            <source src="../sonidos/sonido_tragaperras.mp3" type="audio/mpeg">
         </audio>
-        <img onclick="cambiarImagen" class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png" alt="maquinaArriba">
+        <img onclick="cambiarImagen" class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png"
+            alt="maquinaArriba">
         <section class="tarjetas">
-            <option value="compis" class="tarjeta"><img src="../Imagenes/compis/Ana.png" alt="compis"></option>
-            <option value="iconos" class="tarjeta"><img src="../Imagenes/iconos/veneno.png" alt="iconos"></option>
-            <option value="famosos" class="tarjeta"><img src="../Imagenes/famosos/Danny.png" alt="famosos"></option>
+            <option value="compis" class="tarjeta"><img id="imagen_compis" src="../Imagenes/compis/Ana.png" alt="compis"></option>
+            <option value="iconos" class="tarjeta"><img id="imagen_iconos" src="../Imagenes/iconos/veneno.png" alt="iconos"></option>
+            <option value="famosos" class="tarjeta"><img id="imagen_famosos" src="../Imagenes/famosos/Danny.png" alt="famosos"></option>
         </section>
+
     </main>
 
     <!-- Modal -->
@@ -49,18 +52,19 @@
         <div id="contenedor_archivo">
             <form id="selector_imagenes"> Añadir imagen
                 <input id="archivos" type="file" accept="image/jpeg, image/png" multiple>
-            </form>
         </div>
         <div id="vista_previa">
             <ul id="lista"></ul>
         </div>
         <div id="contenedor_boton">
-            <input id="boton" name="button" type="submit">
+            <!-- <input id="boton" name="button" type="submit"> -->
         </div>
+        </form>
     </div>
 
     <script src="../popup_instrucciones/popup_instrucciones.js" type="module"></script>
     <script src="popup.js"></script>
+    <script src="imagenes_aleatorias.js"></script>
 </body>
 
 </html>

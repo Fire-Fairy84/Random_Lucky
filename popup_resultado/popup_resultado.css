@@ -26,15 +26,6 @@ body {
   justify-content: center;
 }
 
-/* .contenedor {
-  margin-top: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-} */
-
 .imagenes {
   display: flex;
   flex-direction: row;
@@ -72,26 +63,8 @@ img {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  html {
-    /* max-width: 700px;
-    height: auto; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   body {
     max-width: 992px;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: content;
   }
 
-  .contenedor {
-    display: flex;
-    align-items: center;
-  }
 }

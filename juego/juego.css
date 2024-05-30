@@ -2,10 +2,10 @@ body {
     background-image: url('../Imagenes/fondos/fondo_movil_juego.png');
     font-family: "Rye", serif;
     height: 100%;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .navbar {
@@ -43,19 +43,31 @@ main {
     cursor: pointer;
 }
 
-.tarjeta {
+.tarjetas {
     position: absolute;
-    top: 20;
+    top: 315px;
+    z-index: -1;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8be46;
+    margin-right: 5px;
 }
 
-.tarjeta img{
-    width: 500px;
-    z-index: 999;
+
+.tarjeta img {
+    width: 50px;
+    height: 50px;
 }
+
 
 .maquina {
     margin-top: -30px;
     margin-left: 20px;
+    z-index: 1;
 }
 
 
@@ -87,10 +99,10 @@ main {
         column-gap: 1rem;
     }
 
-   li .logo{
-    width: 68%;
-    margin-left:  60px;
-   }
+    li .logo {
+        width: 68%;
+        margin-left: 60px;
+    }
 
     .maquina {
         width: 55%;
@@ -98,4 +110,14 @@ main {
         margin-left: 50px;
     }
 
+    .tarjetas {
+        width: 45%;
+        height: 150px;
+        top: 650px;
+    }
+
+    .tarjeta img {
+        width: 100px;
+        height: 100px;
+    }
 }

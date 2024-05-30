@@ -36,23 +36,21 @@
         <img onclick="cambiarImagen" class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png"
             alt="maquinaArriba">
         <section class="tarjetas">
-            <option value="compis" class="tarjeta"><img id="imagen_compis" src=""
-                    alt="compis"></option>
-            <option value="iconos" class="tarjeta"><img id="imagen_iconos" src="../Imagenes/iconos/veneno.png"
-                    alt="iconos"></option>
-            <option value="famosos" class="tarjeta"><img id="imagen_famosos" src="../Imagenes/famosos/Danny.png"
-                    alt="famosos"></option>
+            <div value="compis" class="tarjeta"> <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> -->
+                <img id="imagen_compis" src="" alt="compis"></div>
+            <div value="iconos" class="tarjeta"><!-- <img src="../Imagenes/famosos/Danny.png" alt=""> --><img id="imagen_iconos" src="../Imagenes/iconos/veneno.png"
+                    alt="iconos"></div>
+            <div value="famosos" class="tarjeta"><!-- <img src="../Imagenes/famosos/Danny.png" alt=""> --><img id="imagen_famosos" src="../Imagenes/famosos/Danny.png"
+                    alt="famosos"></div>
         </section>
-
     </main>
-
     <!-- Modal -->
     <div id="popup_instrucciones" class="modal">
         <div id="instrucciones">
             <p>Dale a examinar y escoge los participantes. Una vez en el juego, clickea en la palanca
                 o presiona la tecla espaciadora.</p>
         </div>
-        <form id="selector_imagenes"> 
+        <form id="selector_imagenes">
             Añadir imagen
             <input id="archivos" type="file" accept="image/jpeg, image/png" multiple>
             <div id="vista_previa">
@@ -60,7 +58,6 @@
             </div>
         </form>
     </div>
-
     <script src="../popup_instrucciones/popup_instrucciones.js" type="module"></script>
     <script src="popup.js"></script>
     <script src="imagenes_aleatorias.js"></script>

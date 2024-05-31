@@ -23,17 +23,18 @@
 <body>
     <header id="header">
         <nav class="navbar">
-            <li><a href="../inicio/inicio.html"><img class="escalar" src="../Imagenes/complementos/flecha.svg" alt="flecha"></a></li>
+            <li><a href="../inicio/inicio.html"><img class="escalar" src="../Imagenes/complementos/flecha.svg"
+                        alt="flecha"></a></li>
             <li><img class="logo" src="../Imagenes/complementos/logo.svg" alt="logo"></li>
-            <li><button id="boton_info" onclick="instrucciones"><img id="info" class="escalar" src="../Imagenes/complementos/info.png"
-                        alt="info"></button></li>
+            <li><button id="boton_info" onclick="instrucciones"><img id="info" class="escalar"
+                        src="../Imagenes/complementos/info.png" alt="info"></button></li>
         </nav>
     </header>
     <main>
         <audio id="miAudio">
             <source src="../sonidos/sonido_tragaperras.mp3" type="audio/mpeg">
         </audio>
-        <img onclick="cambiarImagen" class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png"
+        <img onclick="cambiarImagen()" class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png"
             alt="maquinaArriba">
         <section class="tarjetas">
             <div value="compis" class="tarjeta"> <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> -->
@@ -78,6 +79,7 @@
     <script src="../popup_instrucciones/popup_instrucciones.js" type="module"></script>
     <script src="popup.js"></script>
     <script src="imagenes_aleatorias.js"></script>
+    <script src="imagen_onclick.js"></script>
 </body>
 
 </html>

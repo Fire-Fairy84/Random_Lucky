@@ -85,6 +85,11 @@ main {
     margin-left: 20px;
     z-index: 1;
 }
+.maquina-abajo{
+    margin-left: 180px;
+    margin-top: 35px;
+   
+}
 
 
 @media (min-width: 992px)and (max-width:1200px) {

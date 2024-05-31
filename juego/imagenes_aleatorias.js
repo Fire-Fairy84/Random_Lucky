@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imagen1.src = reader.result;
     };
 
-    // Mostrar imágenes aleatorias
+    /*// Mostrar imágenes aleatorias
     imagen2.src = "../Imagenes/iconos/" + imagenesAleatorias(iconos);
     imagen3.src = "../Imagenes/famosos/" + imagenesAleatorias(famosos);
   });
@@ -49,13 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
     "Santiago.png",
     "Vigo.png",
   ];
-
-  function imagenesAleatorias(imagenes) {
+  
+  /*function imagenesAleatorias(imagenes) {
     const indiceAleatorio = Math.floor(Math.random() * imagenes.length);
     const imagen = imagenes[indiceAleatorio];
 
     if (typeof imagen === "string") return imagen;
 
     return indiceAleatorio;
-  }
-});
+  }*/
+});})
+export{reader, imagen1, imagen2, imagen3}

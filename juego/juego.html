@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="juego.css">
-    <link rel="stylesheet" href="../popup_instrucciones/popup_instrucciones.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="juego.css" />
+    <link rel="stylesheet" href="../popup_instrucciones/popup_instrucciones.css" />
     <!-- <link rel="stylesheet" href="../popup_resultado/popup_resultado.css"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet" />
     <title>Reinas del Dom</title>
 
     <!-- jQuery -->
@@ -23,38 +23,51 @@
 <body>
     <header id="header">
         <nav class="navbar">
-            <li><a href="../inicio/inicio.html"><img class="escalar" src="../Imagenes/complementos/flecha.svg"
-                        alt="flecha"></a></li>
-            <li><img class="logo" src="../Imagenes/complementos/logo.svg" alt="logo"></li>
-            <li><button id="boton_info" onclick="instrucciones"><img id="info" class="escalar"
-                        src="../Imagenes/complementos/info.png" alt="info"></button></li>
+            <li>
+                <a href="../inicio/inicio.html"><img class="escalar" src="../Imagenes/complementos/flecha.svg"
+                        alt="flecha" /></a>
+            </li>
+            <li>
+                <img class="logo" src="../Imagenes/complementos/logo.svg" alt="logo" />
+            </li>
+            <li>
+                <button id="boton_info" onclick="instrucciones">
+                    <img id="info" class="escalar" src="../Imagenes/complementos/info.png" alt="info" />
+                </button>
+            </li>
         </nav>
     </header>
     <main>
         <audio id="miAudio">
-            <source src="../sonidos/sonido_tragaperras.mp3" type="audio/mpeg">
+            <source src="../sonidos/sonido_tragaperras.mp3" type="audio/mpeg" />
         </audio>
-        <img onclick="cambiarImagen()" class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png"
-            alt="maquinaArriba">
+        <img class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png" alt="maquinaArriba" />
         <section class="tarjetas">
-            <div value="compis" class="tarjeta"> <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> -->
-                <img id="imagen_compis" src="" alt="compis">
+            <div value="compis" class="tarjeta">
+                <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> -->
+                <img id="imagen_compis" src="" alt="compis" />
             </div>
-            <div value="iconos" class="tarjeta"><!-- <img src="../Imagenes/famosos/Danny.png" alt=""> --><img
-                    id="imagen_iconos" src="../Imagenes/iconos/veneno.png" alt="iconos"></div>
-            <div value="famosos" class="tarjeta"><!-- <img src="../Imagenes/famosos/Danny.png" alt=""> --><img
-                    id="imagen_famosos" src="../Imagenes/famosos/Danny.png" alt="famosos"></div>
+            <div value="iconos" class="tarjeta">
+                <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> --><img id="imagen_iconos"
+                    src="../Imagenes/iconos/veneno.png" alt="iconos" />
+            </div>
+            <div value="famosos" class="tarjeta">
+                <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> --><img id="imagen_famosos"
+                    src="../Imagenes/famosos/Danny.png" alt="famosos" />
+            </div>
         </section>
     </main>
     <!-- Modal instrucciones-->
     <div id="popup_instrucciones" class="modal">
         <div id="instrucciones">
-            <p>Dale a examinar y escoge los participantes. Una vez en el juego, clickea en la palanca
-                o presiona la tecla espaciadora. Al terminar, cierra la ventana dandole a la x de la
-                esquina superior derecha.</p>
+            <p>
+                Dale a examinar y escoge los participantes. Una vez en el juego,
+                clickea en la palanca o presiona la tecla espaciadora. Al terminar,
+                cierra la ventana dandole a la x de la esquina superior derecha.
+            </p>
         </div>
         <form id="selector_imagenes">
-            <input id="archivos" type="file" accept="image/jpeg, image/png" multiple>
+            <input id="archivos" type="file" accept="image/jpeg, image/png" multiple />
             <div id="vista_previa">
                 <ul id="lista"></ul>
             </div>
@@ -78,8 +91,9 @@
     </div>
     <script src="../popup_instrucciones/popup_instrucciones.js" type="module"></script>
     <script src="popup.js"></script>
-    <script type="module" src="imagenes_aleatorias.js"></script>
-    <script type="module" src="imagen_onclick.js"></script>
+    <script type="module" src="juego.js"></script>
+    <!-- <script type="module" src="imagenes_aleatorias.js"></script> -->
+    <!-- <script type="module" src="imagen_onclick.js"></script> -->
 </body>
 
 </html>

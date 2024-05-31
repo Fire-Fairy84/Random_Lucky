@@ -25,6 +25,6 @@ Una vez seleccionados  Al terminar, cierra la ventana dandole a la x de la esqui
 ## Screenshots
 
 
-#![inicio](image.png))
+![inicio](image.png)
 ![carga archivos](image-1.png)
 ![juego](image-2.png)

@@ -11,7 +11,7 @@ Una vez seleccionados le dará a la palanca y se exhibirá el resultado en la m�
 
 
 El jugador podrá seleccionar los participantes del juego dándole al botón "Elegir Archivos" y escogiendo las fotos.
-Una vez seleccionados  Al terminar, cierra la ventana dandole a la x de la esquina superior derecha. Una vez en el juego habrá que hacer click en la palanca o presiona la tecla espaciadora para inicializar el juego.
+Al terminar, cierra la ventana dándole a la x de la esquina superior derecha. Una vez en el juego habrá que hacer click en la palanca o presiona la tecla espaciadora para inicializar el juego.
 
 
 ## Authors

@@ -25,11 +25,26 @@ body {
   justify-content: center;
 }
 
+/* .contenedor {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+} */
+
 .imagenes {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+.ancho {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
 }
 
 .ancho {
@@ -71,6 +86,14 @@ foto3,
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+  html {
+    /* max-width: 700px;
+    height: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   body {
     max-width: 992px;
   }

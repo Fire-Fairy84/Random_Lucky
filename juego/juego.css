@@ -87,6 +87,19 @@ main {
     margin-top: 44.4px;
 }
 
+dialog {
+    background-color: black;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+   
+}
+
+#boton_cerrar{
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
     html {
         height: 100%;

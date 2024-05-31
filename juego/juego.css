@@ -89,6 +89,10 @@ main {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+    html {
+        height: 100%;
+    }
+
     body {
         background-image: url("../Imagenes/fondos/fondo_escritorio_juego.png");
         max-width: 1200px;
@@ -128,5 +132,11 @@ main {
     .tarjeta img {
         width: 100px;
         height: 100px;
+    }
+
+    .maquina-abajo {
+        width: 55%;
+        margin-left: 64px;
+        margin-top: 42px;
     }
 }

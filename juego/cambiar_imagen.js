@@ -2,7 +2,7 @@ const audio = document.getElementById("miAudio");
 
 const path = "../Imagenes/complementos/";
 const arriba = "maquinaArriba.png";
-const abajo = "maquinaAbajo.svg";
+const abajo = "maquinaAbajo.png";
 
 export function cambiarImagen() {
   const imagen = document.getElementById("maquina");

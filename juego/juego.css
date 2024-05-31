@@ -68,24 +68,23 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #e8be46;
-    /* margin-left: 20px;*/
+    margin-right: 50px;
 }
 
 .tarjeta img {
     width: 50px;
     height: 50px;
     object-fit: contain;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .maquina {
-    margin-left: 20px;
     z-index: 1;
 }
 
 .maquina-abajo {
-    margin-left: 163px;
-    margin-top: 21px;
+    margin-left: 8px;
+    margin-top: 44.4px;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -96,7 +95,10 @@ main {
     body {
         background-image: url("../Imagenes/fondos/fondo_escritorio_juego.png");
         max-width: 1200px;
+        width: 80%;
+        padding-left: 70px;
     }
+
 
     .navbar {
         height: 25vh;
@@ -110,6 +112,8 @@ main {
 
     #info {
         margin-right: 70px;
+        width: 2rem;
+        height: 2rem;
     }
 
     li .logo {
@@ -117,26 +121,27 @@ main {
     }
 
     .maquina {
-        width: 55%;
+        width: 65%;
         margin-top: -30px;
         margin-left: 50px;
     }
 
     .tarjetas {
-        width: 45%;
+        width: 30%;
         height: 150px;
-        top: 550px;
-        margin-right: 3px;
+        top: 505px;
+        margin-left: 9.2px;
     }
 
     .tarjeta img {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
+        margin-right: 0;
     }
 
     .maquina-abajo {
-        width: 55%;
-        margin-left: 64px;
-        margin-top: 42px;
+        width: 65%;
+        margin-left: 63px;
+        margin-top: 39px;
     }
 }

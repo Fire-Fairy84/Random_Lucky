@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet" />
     <title>Reinas del Dom</title>
-
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <!-- jQuery Modal CSS -->
@@ -46,22 +45,24 @@
         <audio id="miAudio">
             <source src="../sonidos/sonido_tragaperras.mp3" type="audio/mpeg" />
         </audio>
-        <img class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png" alt="maquinaArriba" />
-        <section class="tarjetas">
-            <div value="compis" class="tarjeta">
-                <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> -->
-                <img id="imagen_compis" src="" alt="compis" />
-            </div>
-            <div value="iconos" class="tarjeta">
-                <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> --><img id="imagen_iconos"
-                    src="../Imagenes/iconos/veneno.png" alt="iconos" />
-            </div>
-            <div value="famosos" class="tarjeta">
-                <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> --><img id="imagen_famosos"
-                    src="../Imagenes/famosos/Danny.png" alt="famosos" />
-            </div>
-        </section>
+        <div class="tragaperras">
+            <img class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png" alt="maquinaArriba" />
+            <section class="tarjetas">
+                <div value="compis" class="tarjeta">
+                    <img id="imagen_compis" src="" class="imagenes_tarjetas" alt="compis" />
+                </div>
+                <div value="iconos" class="tarjeta">
+                    <img id="imagen_iconos" src="../Imagenes/iconos/veneno.png" class="imagenes_tarjetas"
+                        alt="iconos" />
+                </div>
+                <div value="famosos" class="tarjeta">
+                    <img id="imagen_famosos" src="../Imagenes/famosos/Danny.png" class="imagenes_tarjetas"
+                        alt="famosos" />
+                </div>
+            </section>
+        </div>
     </main>
+
     <!-- Modal instrucciones-->
     <div id="popup_instrucciones" class="modal">
         <div id="instrucciones">
@@ -78,6 +79,7 @@
             </div>
         </form>
     </div>
+
     <!-- Modal resultado -->
     <!-- <audio src="../sonidos/risa.mp3" autoplay>
     </audio> -->
@@ -96,10 +98,9 @@
     </div>
     <script src="../popup_instrucciones/popup_instrucciones.js" type="module"></script>
     <script src="popup.js"></script>
+    <script src="girar_imagenes.js"></script>
     <script src="info.js"></script>
     <script type="module" src="juego.js"></script>
-    <!-- <script type="module" src="imagenes_aleatorias.js"></script> -->
-    <!-- <script type="module" src="imagen_onclick.js"></script> -->
 </body>
 
 </html>

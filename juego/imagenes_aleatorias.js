@@ -1,4 +1,6 @@
 export function imagenesAleatorias(imagenes) {
+
+  
   const reader = new FileReader();
 
   reader.onload = function (e) {
@@ -20,3 +22,4 @@ function indiceAleatorio(imagenes) {
 
   return indice;
 }
+

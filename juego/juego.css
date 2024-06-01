@@ -113,15 +113,46 @@ dialog {
     padding: 5px;
 }
 
+
+.tarjeta.spin {
+    animation: spin 0.5s infinite linear;
+}
+
+.tarjeta.spin::before, .tarjeta.spin::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Esconde la parte trasera de los pseudo-elementos */
+}
+
+.tarjeta.spin::before {
+    background: #f8f8f8; /* Color y transparencia para pseudo-elemento trasero */
+    transform: translateZ(-50px); /* Ajusta la distancia para el pseudo-elemento trasero */
+    animation: spin 1s infinite linear reverse; /* Gira más lento y en dirección opuesta */
+}
+
+.tarjeta.spin::after {
+    background: rgb(0, 0, 0); /* Color y transparencia para pseudo-elemento delantero */
+    transform: translateZ(50px); /* Ajusta la distancia para el pseudo-elemento delantero */
+    animation: spin 1s infinite linear; /* Gira más rápido */
+}
+
 @keyframes spin {
     0% {
-        transform: translateY(0);
+        transform: rotateX(0deg);
     }
 
     100% {
-        transform: translateY(-300px);
+        transform: rotateX(360deg);
     }
 }
+
+
+
+
 
 .tarjeta.spin img {
     animation: spin 5s infinite;

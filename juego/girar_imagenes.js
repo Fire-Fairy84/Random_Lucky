@@ -1,14 +1,17 @@
-
 export function girarImagenes() {
-  const carrete = document.querySelectorAll(".imagenes_tarjetas");
+  const tarjetas = document.querySelectorAll(".tarjeta");
+  
+  console.log("Tarjetas encontradas:", tarjetas);
 
-  carrete.forEach(carrete => {
-    carrete.classList.add("spin");
+  tarjetas.forEach(tarjeta => {
+    tarjeta.classList.add("spin");
+    console.log("Añadiendo spin a:", tarjeta);
   });
 
   setTimeout(() => {
-    carrete.forEach(carrete => {
-      carrete.classList.remove("spin");
+    tarjetas.forEach(tarjeta => {
+      tarjeta.classList.remove("spin");
+      console.log("Removiendo spin de:", tarjeta);
     });
-  }, 5000);
+  }, 4000);
 }

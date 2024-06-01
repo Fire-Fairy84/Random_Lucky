@@ -2,17 +2,17 @@ export function imagenesAleatorias(imagenes) {
   const reader = new FileReader();
 
   reader.onload = function (e) {
-    imagen1.src = e.target.result;
+    imagen_compis.src = e.target.result;
   };
 
   reader.readAsDataURL(compis[indiceAleatorio(compis)]);
 
   reader.onloadend = function () {
-    imagen1.src = reader.result;
+    imagen_compis.src = reader.result;
   };
 
-  imagen2.src = "../Imagenes/iconos/" + iconos[indiceAleatorio(iconos)];
-  imagen3.src = "../Imagenes/famosos/" + famosos[indiceAleatorio(famosos)];
+  imagen_iconos.src = "../Imagenes/iconos/" + iconos[indiceAleatorio(iconos)];
+  imagen_famosos.src = "../Imagenes/famosos/" + famosos[indiceAleatorio(famosos)];
 }
 
 function indiceAleatorio(imagenes) {

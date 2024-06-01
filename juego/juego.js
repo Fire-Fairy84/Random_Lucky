@@ -1,6 +1,7 @@
 import { archivosInputChange } from "./archivos_input_change.js";
 import { cambiarImagen } from "./cambiar_imagen.js";
 import { imagenesAleatorias } from "./imagenes_aleatorias.js";
+import { girarImagenes } from "./girar_imagenes.js";
 
 window.iconos = [
   "anillo.png",
@@ -25,15 +26,15 @@ window.famosos = [
 ];
 
 window.compis = [];
-window.imagen1 = null;
-window.imagen2 = null;
-window.imagen3 = null;
+window.imagen_compis = null;
+window.imagen_iconos = null;
+window.imagen_famosos = null;
 window.imagenMaquina = null;
 
 document.addEventListener("DOMContentLoaded", () => {
-  imagen1 = document.getElementById("imagen_compis");
-  imagen2 = document.getElementById("imagen_iconos");
-  imagen3 = document.getElementById("imagen_famosos");
+  imagen_compis = document.getElementById("imagen_compis");
+  imagen_iconos = document.getElementById("imagen_iconos");
+  imagen_famosos = document.getElementById("imagen_famosos");
   imagenMaquina = document.getElementById("maquina");
 
   const resultado = document.getElementById("resultado");
@@ -42,6 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
   archivos_input.addEventListener("change", archivosInputChange);
   imagenMaquina.addEventListener("click", () => {
     cambiarImagen();
+    girarImagenes();
+    // girarImagenes dura cierto tiempo, cuando las imagenes dejen de girar,
+    // calculamos el resultado
     imagenesAleatorias();
+    // una vez hemos encontrado el resultado, lo mostramos en el popup
+    // popupResultado();
+    // eliminar resultado del array compis
   });
 });

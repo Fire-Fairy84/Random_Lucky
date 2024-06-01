@@ -1,6 +1,6 @@
 
 export function girarImagenes() {
-  const carrete = document.querySelectorAll(".tarjeta");
+  const carrete = document.querySelectorAll(".imagenes_tarjetas");
 
   carrete.forEach(carrete => {
     carrete.classList.add("spin");

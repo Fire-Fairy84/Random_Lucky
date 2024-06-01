@@ -20,9 +20,13 @@ window.famosos = [
   "JuanCar.png",
   "Lady.png",
   "Meryl.png",
-  "Pedro.png",
+  "Marilyn.jpg",
   "Santiago.png",
   "Vigo.png",
+  "Bunny.jpg",
+  "Snoop.jpg",
+  "Whoopi.jpg",
+  "AlyMa.jpg"
 ];
 
 window.compis = [];
@@ -40,7 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultado = document.getElementById("resultado");
   const archivos_input = document.getElementById("archivos");
 
-  archivos_input.addEventListener("change", archivosInputChange);
+  archivos_input.addEventListener( "change", archivosInputChange );
+  if ( imagenMaquina.addEventListener == 'click' )
+  {
+    
+  }
   imagenMaquina.addEventListener("click", () => {
     cambiarImagen();
     girarImagenes();
@@ -50,5 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // una vez hemos encontrado el resultado, lo mostramos en el popup
     // popupResultado();
     // eliminar resultado del array compis
+  });
+  // imagenMaquina.addEventListener("click", archivosInputChange);
+
+  document.addEventListener("keydown", (event) => {
+    if (event.code === "Space") {
+       cambiarImagen();
+       girarImagenes();
+       // girarImagenes dura cierto tiempo, cuando las imagenes dejen de girar,
+       // calculamos el resultado
+       imagenesAleatorias();  }
   });
 });

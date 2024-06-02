@@ -2,6 +2,7 @@ import { cambioArchivosInput } from "./cambio_archivos_input.js";
 import { cambiarImagen } from "./cambiar_imagen.js";
 import { imagenesAleatorias } from "./imagenes_aleatorias.js";
 import { girarImagenes } from "./girar_imagenes.js";
+import { cambiarTitulo } from "./frases.js";
 
 window.iconos = [
   "anillo.png",
@@ -45,13 +46,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const archivos_input = document.getElementById("archivos");
 
   archivos_input.addEventListener("change", cambioArchivosInput);
-  
+
   imagenMaquina.addEventListener("click", () => {
     cambiarImagen();
     girarImagenes();
     // girarImagenes dura cierto tiempo, cuando las imagenes dejen de girar,
     // calculamos el resultado
     imagenesAleatorias();
+    cambiarTitulo();
+
     // una vez hemos encontrado el resultado, lo mostramos en el popup
     // popupResultado();
     // eliminar resultado del array compis
@@ -65,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // girarImagenes dura cierto tiempo, cuando las imagenes dejen de girar,
       // calculamos el resultado
       imagenesAleatorias();
+      cambiarTitulo();
     }
   });
 });

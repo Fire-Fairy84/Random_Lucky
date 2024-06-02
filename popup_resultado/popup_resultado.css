@@ -51,7 +51,7 @@ foto3,
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-.ancho {
+  .ancho {
     width: 120px;
     height: 120px;
   }

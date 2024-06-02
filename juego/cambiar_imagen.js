@@ -6,7 +6,6 @@ const abajo = "maquinaAbajo.png";
 
 export function cambiarImagen() {
   const imagen = document.getElementById("maquina");
-  // Aquí cambia la ruta de la imagen por la nueva ruta
   if (imagen.src.endsWith(arriba)) {
     imagen.src = path + abajo;
     imagen.classList.add("maquina-abajo");

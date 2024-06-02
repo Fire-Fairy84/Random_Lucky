@@ -51,14 +51,10 @@
 
 .imagen_previa {
   max-width: 10%;
-  /* Cambia según tus preferencias */
   max-height: 10%;
-  /* Cambia según tus preferencias */
   margin-right: 1%;
-  /* Espacio entre imágenes */
 }
 
-/* Media query para ordenador */
 @media (min-width: 992px) and (max-width: 1200px) {
   #popup_instrucciones {
     height: 70%;

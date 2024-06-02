@@ -11,11 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet" />
     <title>Reinas del Dom</title>
-    <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <!-- jQuery Modal CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <!-- jQuery Modal JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 </head>
 
@@ -31,7 +28,7 @@
             </li>
             <li>
                 <dialog>
-                    <p>Recuerda! Escoge los participantes, luego clickea en la palanca o presiona la tecla espaciadora!
+                    <p>Recuerda! Escoge los participantes, luego clicka en la palanca o presiona la tecla espaciadora!
                     </p>
                     <button id="boton_cerrar" autofocus>¡Vale!</button>
                 </dialog>
@@ -59,22 +56,20 @@
                 <div value="famosos" class="tarjeta">
                     <img id="imagen_famosos" src="../Imagenes/famosos/Danny.png" class="imagenes_tarjetas"
                         alt="famosos" />
-               
-                    </div>
+                </div>
             </section>
         </div>
         <div class="participantes">
             <div id="resultado"></div>
         </div>
-        <button class="resetear" onclick="resetearPagina()"><img class="boton_resetear" src="../Imagenes/complementos/icono_reset.png" alt="boton de reset"></button>
+        <button class="resetear" onclick="resetearPagina()"><img class="boton_resetear"
+                src="../Imagenes/complementos/icono_reset.png" alt="boton de reset"></button>
     </main>
-
-    <!-- Modal instrucciones-->
     <div id="popup_instrucciones" class="modal">
         <div id="instrucciones">
             <p>
                 Dale a examinar y escoge los participantes. Una vez en el juego,
-                clickea en la palanca o presiona la tecla espaciadora. Al terminar,
+                clicka en la palanca o presiona la tecla espaciadora. Al terminar,
                 cierra la ventana dándole a la x de la esquina superior derecha.
             </p>
         </div>
@@ -85,8 +80,6 @@
             </div>
         </form>
     </div>
-
-    <!-- Modal resultado -->
     <audio id="audio_resultado" src="../sonidos/risa.mp3" autoplay>
     </audio>
     <div id="popup_resultado" class="modal">
@@ -104,6 +97,7 @@
     <script type="module" src="popup.js"></script>
     <script src="info.js"></script>
     <script type="module" src="juego.js"></script>
-    <script src="reset.js"></script>
+    <script src="resetear.js"></script>
 </body>
+
 </html>

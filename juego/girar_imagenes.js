@@ -11,5 +11,3 @@ export function girarImagenes() {
     });
   }, 4000);
 }
-
-

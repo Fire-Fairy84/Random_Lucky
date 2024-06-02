@@ -1,5 +1,3 @@
-import { imagenesAleatorias } from "./imagenes_aleatorias.js";
-
 export function cambioArchivosInput(event) {
   compis = Array.from(event.target.files);
 

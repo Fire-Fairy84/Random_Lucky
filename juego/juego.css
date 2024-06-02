@@ -132,25 +132,18 @@ dialog {
     top: 0;
     left: 0;
     backface-visibility: hidden;
-    /* Esconde la parte trasera de los pseudo-elementos */
 }
 
 .tarjeta.spin::before {
     background: #f8f8f8;
-    /* Color y transparencia para pseudo-elemento trasero */
     transform: translateZ(-50px);
-    /* Ajusta la distancia para el pseudo-elemento trasero */
     animation: spin 1s infinite linear reverse;
-    /* Gira más lento y en dirección opuesta */
 }
 
 .tarjeta.spin::after {
     background: rgb(0, 0, 0);
-    /* Color y transparencia para pseudo-elemento delantero */
     transform: translateZ(50px);
-    /* Ajusta la distancia para el pseudo-elemento delantero */
     animation: spin 1s infinite linear;
-    /* Gira más rápido */
 }
 
 .boton_resetear {

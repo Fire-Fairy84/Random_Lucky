@@ -59,13 +59,14 @@
                 <div value="famosos" class="tarjeta">
                     <img id="imagen_famosos" src="../Imagenes/famosos/Danny.png" class="imagenes_tarjetas"
                         alt="famosos" />
-                </div>
+               
+                    </div>
             </section>
         </div>
         <div class="participantes">
             <div id="resultado"></div>
         </div>
-
+        <button class="resetear" onclick="resetearPagina()"><img class="boton_resetear" src="../Imagenes/complementos/icono_reset.png" alt="boton de reset"></button>
     </main>
 
     <!-- Modal instrucciones-->
@@ -74,7 +75,7 @@
             <p>
                 Dale a examinar y escoge los participantes. Una vez en el juego,
                 clickea en la palanca o presiona la tecla espaciadora. Al terminar,
-                cierra la ventana dandole a la x de la esquina superior derecha.
+                cierra la ventana dándole a la x de la esquina superior derecha.
             </p>
         </div>
         <form id="selector_imagenes">
@@ -103,6 +104,6 @@
     <script src="popup.js"></script>
     <script src="info.js"></script>
     <script type="module" src="juego.js"></script>
+    <script src="reset.js"></script>
 </body>
-
 </html>

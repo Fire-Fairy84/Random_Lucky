@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="juego.css" />
     <link rel="stylesheet" href="../popup_instrucciones/popup_instrucciones.css" />
-    <!-- <link rel="stylesheet" href="../popup_resultado/popup_resultado.css"> -->
+    <link rel="stylesheet" href="../popup_resultado/popup_resultado.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet" />
@@ -42,13 +42,11 @@
         </nav>
     </header>
     <main>
-        <audio id="miAudio">
+        <audio id="audio_maquina">
             <source src="../sonidos/sonido_tragaperras.mp3" type="audio/mpeg" />
         </audio>
         <div class="tragaperras">
-            <img class="maquina" id="maquina"
-            src="../Imagenes/complementos/maquinaArriba.png" alt="maquinaArriba"
-            />
+            <img class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png" alt="maquinaArriba" />
             <div class="background"></div>
             <section class="tarjetas">
                 <div value="compis" class="tarjeta">
@@ -64,6 +62,10 @@
                 </div>
             </section>
         </div>
+        <div class="participantes">
+            <div id="resultado"></div>
+        </div>
+
     </main>
 
     <!-- Modal instrucciones-->
@@ -84,19 +86,16 @@
     </div>
 
     <!-- Modal resultado -->
-    <audio src="../sonidos/risa.mp3" autoplay>
+    <audio id="audio_resultado" src="../sonidos/risa.mp3" autoplay>
     </audio>
     <div id="popup_resultado" class="modal">
         <div class="contenedor_modal">
-            <div class="imagenes">
+            <div class="imagenes_resultado">
                 <img src="../Imagenes/compis/Carol.png" alt="foto1" class="ancho" />
                 <img src="../Imagenes/iconos/veneno.png" alt="foto2" class="ancho" />
-                <img src="../Imagenes/famosos/Pedro.jpg" alt="foto3" class="ancho" />
+                <img src="../Imagenes/famosos/Bunny.jpg" alt="foto3" class="ancho" />
             </div>
             <h2 class="titulo">Que seáis felices en el matrimonio</h2>
-            <div class="contenedor_boton">
-                <button onclick="juego.html" class="boton">VOLVER</button>
-            </div>
         </div>
     </div>
 

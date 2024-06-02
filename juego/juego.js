@@ -1,4 +1,4 @@
-import { archivosInputChange } from "./archivos_input_change.js";
+import { cambioArchivosInput } from "./cambio_archivos_input.js";
 import { cambiarImagen } from "./cambiar_imagen.js";
 import { imagenesAleatorias } from "./imagenes_aleatorias.js";
 import { girarImagenes } from "./girar_imagenes.js";
@@ -26,7 +26,7 @@ window.famosos = [
   "Bunny.jpg",
   "Snoop.jpg",
   "Whoopi.jpg",
-  "AlyMa.jpg"
+  "AlyMa.jpg",
 ];
 
 window.compis = [];
@@ -44,11 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultado = document.getElementById("resultado");
   const archivos_input = document.getElementById("archivos");
 
-  archivos_input.addEventListener( "change", archivosInputChange );
-  if ( imagenMaquina.addEventListener == 'click' )
-  {
-    
-  }
+  archivos_input.addEventListener("change", cambioArchivosInput);
+  
   imagenMaquina.addEventListener("click", () => {
     cambiarImagen();
     girarImagenes();
@@ -63,10 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("keydown", (event) => {
     if (event.code === "Space") {
-       cambiarImagen();
-       girarImagenes();
-       // girarImagenes dura cierto tiempo, cuando las imagenes dejen de girar,
-       // calculamos el resultado
-       imagenesAleatorias();  }
+      cambiarImagen();
+      girarImagenes();
+      // girarImagenes dura cierto tiempo, cuando las imagenes dejen de girar,
+      // calculamos el resultado
+      imagenesAleatorias();
+    }
   });
 });

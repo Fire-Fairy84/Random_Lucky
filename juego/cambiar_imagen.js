@@ -1,4 +1,4 @@
-const audio = document.getElementById("miAudio");
+const audio = document.getElementById("audio_maquina");
 
 const path = "../Imagenes/complementos/";
 const arriba = "maquinaArriba.png";

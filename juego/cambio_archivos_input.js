@@ -1,6 +1,6 @@
 import { imagenesAleatorias } from "./imagenes_aleatorias.js";
 
-export function archivosInputChange(event) {
+export function cambioArchivosInput(event) {
   compis = Array.from(event.target.files);
 
   const reader = new FileReader();

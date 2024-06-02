@@ -29,7 +29,7 @@ export function mostrarResultadoPopup(resultado) {
   setTimeout(() => {
     $(popupResultado).modal("show");
     audioResultado.play();
-  }, 4000);
+  }, 1000);
 }
 
 window.onload = function () {

@@ -2,6 +2,10 @@
   background: linear-gradient(70deg, #ff2e00, #ffd7ca);
 }
 
+.contenedor_modal{
+  margin-top: 20%;
+}
+
 .contenedor_boton {
   display: flex;
   align-items: center;
@@ -13,6 +17,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5%;
 }
 
 .ancho {

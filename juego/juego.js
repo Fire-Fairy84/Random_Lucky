@@ -1,4 +1,3 @@
-
 import { cambioArchivosInput } from "./cambio_archivos_input.js";
 import { cambiarImagen } from "./cambiar_imagen.js";
 import { imagenesAleatorias } from "./imagenes_aleatorias.js";
@@ -43,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
   imagen_famosos = document.getElementById("imagen_famosos");
   imagenMaquina = document.getElementById("maquina");
 
-  const resultado = document.getElementById("resultado");
   const archivos_input = document.getElementById("archivos");
 
   archivos_input.addEventListener("change", cambioArchivosInput);
@@ -66,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         const resultadoImagenes = imagenesAleatorias();
         mostrarResultadoPopup(resultadoImagenes);
-      }, 4000); 
+      }, 4000);
     }
   });
 });

@@ -1,12 +1,9 @@
+
 export function cambiarTitulo() {
   const titulo = document.getElementById("titulo_modal");
-  if (!titulo) return;
-
   const imagenIconos = document.querySelector(
     ".imagenes_resultado img[alt='iconos']"
   );
-  if (!imagenIconos) return;
-
   const src = imagenIconos.src;
 
   if (src.endsWith("veneno.png")) {
@@ -23,3 +20,4 @@ export function cambiarTitulo() {
     titulo.textContent = "Cuidado con las traiciones";
   }
 }
+

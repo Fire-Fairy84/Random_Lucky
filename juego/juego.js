@@ -49,16 +49,22 @@ document.addEventListener("DOMContentLoaded", () => {
   imagenMaquina.addEventListener("click", () => {
     cambiarImagen();
     girarImagenes();
-    const resultadoImagenes = imagenesAleatorias();
-    mostrarResultadoPopup(resultadoImagenes);
+
+    setTimeout(() => {
+      const resultadoImagenes = imagenesAleatorias();
+      mostrarResultadoPopup(resultadoImagenes);
+    }, 4000); 
   });
 
   document.addEventListener("keydown", (event) => {
     if (event.code === "Space") {
       cambiarImagen();
       girarImagenes();
-      const resultadoImagenes = imagenesAleatorias();
-      mostrarResultadoPopup(resultadoImagenes);
+
+      setTimeout(() => {
+        const resultadoImagenes = imagenesAleatorias();
+        mostrarResultadoPopup(resultadoImagenes);
+      }, 4000);
     }
   });
 });

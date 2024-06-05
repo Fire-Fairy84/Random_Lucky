@@ -6,17 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="juego.css" />
     <link rel="stylesheet" href="../popup_instrucciones/popup_instrucciones.css" />
-    <!-- <link rel="stylesheet" href="../popup_resultado/popup_resultado.css"> -->
+    <link rel="stylesheet" href="../popup_resultado/popup_resultado.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet" />
     <title>Reinas del Dom</title>
-
-    <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <!-- jQuery Modal CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <!-- jQuery Modal JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 </head>
 
@@ -32,7 +28,7 @@
             </li>
             <li>
                 <dialog>
-                    <p>Recuerda! Escoge los participantes, luego clickea en la palanca o presiona la tecla espaciadora!
+                    <p>Recuerda! Escoge los participantes, luego clicka en la palanca o presiona la tecla espaciadora!
                     </p>
                     <button id="boton_cerrar" autofocus>¡Vale!</button>
                 </dialog>
@@ -43,63 +39,65 @@
         </nav>
     </header>
     <main>
-        <audio id="miAudio">
+        <audio id="audio_maquina">
             <source src="../sonidos/sonido_tragaperras.mp3" type="audio/mpeg" />
         </audio>
-        <img class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png" alt="maquinaArriba" />
-        <section class="tarjetas">
-            <div value="compis" class="tarjeta">
-                <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> -->
-                <img id="imagen_compis" src="" alt="compis" />
-            </div>
-            <div value="iconos" class="tarjeta">
-                <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> --><img id="imagen_iconos"
-                    src="../Imagenes/iconos/veneno.png" alt="iconos" />
-            </div>
-            <div value="famosos" class="tarjeta">
-                <!-- <img src="../Imagenes/famosos/Danny.png" alt=""> --><img id="imagen_famosos"
-                    src="../Imagenes/famosos/Danny.png" alt="famosos" />
-            </div>
-        </section>
+        <div class="tragaperras">
+            <img class="maquina" id="maquina" src="../Imagenes/complementos/maquinaArriba.png" alt="maquinaArriba" />
+            <div class="background"></div>
+            <section class="tarjetas">
+                <div value="compis" class="tarjeta">
+                    <img id="imagen_compis" src="" class="imagenes_tarjetas" alt="compis" />
+                </div>
+                <div value="iconos" class="tarjeta">
+                    <img id="imagen_iconos" src="../Imagenes/iconos/veneno.png" class="imagenes_tarjetas"
+                        alt="iconos" />
+                </div>
+                <div value="famosos" class="tarjeta">
+                    <img id="imagen_famosos" src="../Imagenes/famosos/Danny.png" class="imagenes_tarjetas"
+                        alt="famosos" />
+                </div>
+            </section>
+        </div>
+        <div class="participantes">
+            <div id="resultado"></div>
+        </div>
+        <button class="resetear" onclick="resetearPagina()"><img class="boton_resetear"
+                src="../Imagenes/complementos/icono_reset.png" alt="boton de reset"></button>
     </main>
-    <!-- Modal instrucciones-->
     <div id="popup_instrucciones" class="modal">
         <div id="instrucciones">
             <p>
                 Dale a examinar y escoge los participantes. Una vez en el juego,
-                clickea en la palanca o presiona la tecla espaciadora. Al terminar,
-                cierra la ventana dandole a la x de la esquina superior derecha.
+                clicka en la palanca o presiona la tecla espaciadora. Al terminar,
+                cierra la ventana dándole a la x de la esquina superior derecha.
             </p>
         </div>
         <form id="selector_imagenes">
-            <input id="archivos" type="file" accept="image/jpeg, image/png" multiple />
+            <input id="archivos" type="file" accept="image/jpg, image/png" multiple />
             <div id="vista_previa">
                 <ul id="lista"></ul>
             </div>
         </form>
     </div>
-    <!-- Modal resultado -->
-    <!-- <audio src="../sonidos/risa.mp3" autoplay>
-    </audio> -->
+    <audio id="audio_resultado" src="../sonidos/risa.mp3" autoplay>
+    </audio>
     <div id="popup_resultado" class="modal">
         <div class="contenedor_modal">
-            <div class="imagenes">
+            <div class="imagenes_resultado">
                 <img src="../Imagenes/compis/Carol.png" alt="foto1" class="ancho" />
                 <img src="../Imagenes/iconos/veneno.png" alt="foto2" class="ancho" />
-                <img src="../Imagenes/famosos/Pedro.jpg" alt="foto3" class="ancho" />
+                <img src="../Imagenes/famosos/Bunny.jpg" alt="foto3" class="ancho" />
             </div>
-            <h2 class="titulo">Que seáis felices en el matrimonio</h2>
-            <div class="contenedor_boton">
-                <button onclick="juego.html" class="boton">VOLVER</button>
-            </div>
+            <h2 id="titulo_modal" class="titulo"></h2>
         </div>
     </div>
+
     <script src="../popup_instrucciones/popup_instrucciones.js" type="module"></script>
-    <script src="popup.js"></script>
+    <script type="module" src="popup.js"></script>
     <script src="info.js"></script>
     <script type="module" src="juego.js"></script>
-    <!-- <script type="module" src="imagenes_aleatorias.js"></script> -->
-    <!-- <script type="module" src="imagen_onclick.js"></script> -->
+    <script src="resetear.js"></script>
 </body>
 
 </html>

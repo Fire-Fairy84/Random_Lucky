@@ -51,53 +51,124 @@ main {
     top: 150px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #boton_info {
     cursor: pointer;
 }
 
-.tarjetas {
-    position: absolute;
-    top: 350px;
-    z-index: -1;
-    width: 200px;
-    height: 100px;
+.tragaperras {
+    position: relative;
+    width: 100vw;
     display: flex;
-    gap: 0.5rem;
     justify-content: center;
     align-items: center;
+}
+
+.tragaperras .background {
+    top: 50%;
+    width: 250px;
+    height: 120px;
+    z-index: -2;
     background-color: #e8be46;
-    margin-right: 50px;
+    position: absolute;
+}
+
+.tarjetas {
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    height: 100px;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 21.5px;
+}
+
+.tarjeta {
+    width: 50px;
+    height: 50px;
 }
 
 .tarjeta img {
     width: 50px;
     height: 50px;
-    object-fit: contain;
-    /* margin-right: 20px; */
+    object-fit: cover;
 }
 
 .maquina {
     z-index: 1;
 }
 
-.maquina-abajo {
-    margin-left: 8px;
-    margin-top: 44.4px;
-}
-
 dialog {
     background-color: black;
     color: white;
     font-family: "Courier New", Courier, monospace;
-   
 }
 
-#boton_cerrar{
+#boton_cerrar {
     color: white;
     border: 2px solid white;
     padding: 5px;
+}
+
+.tarjeta.spin {
+    animation: spin 0s infinite linear;
+}
+
+.tarjeta.spin img {
+    animation: spin 5s infinite;
+}
+
+.tarjeta.spin::before,
+.tarjeta.spin::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.tarjeta.spin::before {
+    background: #f8f8f8;
+    transform: translateZ(-50px);
+    animation: spin 1s infinite linear reverse;
+}
+
+.tarjeta.spin::after {
+    background: rgb(0, 0, 0);
+    transform: translateZ(50px);
+    animation: spin 1s infinite linear;
+}
+
+.boton_resetear {
+    width: 34px; 
+    height: 34px;
+    background-color: rgb(187, 9, 17);
+    padding: 12px;
+    border-radius: 15px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+.participantes {
+    height: 40%;
+    width: 60%;
+    background-color: #bc8f12;
+    margin-top: 10%;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -111,7 +182,6 @@ dialog {
         width: 80%;
         padding-left: 70px;
     }
-
 
     .navbar {
         height: 25vh;
@@ -133,28 +203,9 @@ dialog {
         width: 40%;
     }
 
-    .maquina {
-        width: 65%;
-        margin-top: -30px;
-        margin-left: 50px;
+    .boton_resetear {
+        width: 54px; 
+        height: 54px;
     }
 
-    .tarjetas {
-        width: 30%;
-        height: 150px;
-        top: 505px;
-        margin-left: 9.2px;
-    }
-
-    .tarjeta img {
-        width: 90px;
-        height: 90px;
-        margin-right: 0;
-    }
-
-    .maquina-abajo {
-        width: 65%;
-        margin-left: 63px;
-        margin-top: 39px;
-    }
 }

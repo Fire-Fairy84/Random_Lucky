@@ -1,22 +1,9 @@
-html {
-  font-family: "Rye", serif;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-body {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  object-fit: cover;
-}
-
 #popup_resultado {
   background: linear-gradient(70deg, #ff2e00, #ffd7ca);
+}
+
+.contenedor_modal{
+  margin-top: 20%;
 }
 
 .contenedor_boton {
@@ -25,29 +12,21 @@ body {
   justify-content: center;
 }
 
-.imagenes {
+.imagenes_resultado {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5%;
 }
 
 .ancho {
-  width: 120px;
-  height: 120px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
 }
 
-.ancho {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-}
-
-img {
-  width: 30%;
-  justify-content: center;
-  align-items: center;
+.imagenes_resultado img {
   border-radius: 5%;
 }
 
@@ -57,7 +36,7 @@ foto3,
   box-shadow: 20px 15px 7px rgba(0, 0, 0, 0.205);
 }
 
-.boton {
+.boton_volver {
   font-family: "Rye", serif;
   font-weight: 600;
   font-size: larger;
@@ -77,7 +56,8 @@ foto3,
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  body {
-    max-width: 992px;
+  .ancho {
+    width: 120px;
+    height: 120px;
   }
 }

@@ -1,6 +1,8 @@
-import { archivosInputChange } from "./archivos_input_change.js";
+import { cambioArchivosInput } from "./cambio_archivos_input.js";
 import { cambiarImagen } from "./cambiar_imagen.js";
 import { imagenesAleatorias } from "./imagenes_aleatorias.js";
+import { girarImagenes } from "./girar_imagenes.js";
+import { mostrarResultadoPopup } from "./popup.js";
 
 window.iconos = [
   "anillo.png",
@@ -19,29 +21,50 @@ window.famosos = [
   "JuanCar.png",
   "Lady.png",
   "Meryl.png",
-  "Pedro.png",
+  "Marilyn.jpg",
   "Santiago.png",
   "Vigo.png",
+  "Bunny.jpg",
+  "Snoop.jpg",
+  "Whoopi.jpg",
+  "AlyMa.jpg",
 ];
 
 window.compis = [];
-window.imagen1 = null;
-window.imagen2 = null;
-window.imagen3 = null;
+window.imagen_compis = null;
+window.imagen_iconos = null;
+window.imagen_famosos = null;
 window.imagenMaquina = null;
 
 document.addEventListener("DOMContentLoaded", () => {
-  imagen1 = document.getElementById("imagen_compis");
-  imagen2 = document.getElementById("imagen_iconos");
-  imagen3 = document.getElementById("imagen_famosos");
+  imagen_compis = document.getElementById("imagen_compis");
+  imagen_iconos = document.getElementById("imagen_iconos");
+  imagen_famosos = document.getElementById("imagen_famosos");
   imagenMaquina = document.getElementById("maquina");
 
-  const resultado = document.getElementById("resultado");
   const archivos_input = document.getElementById("archivos");
 
-  archivos_input.addEventListener("change", archivosInputChange);
+  archivos_input.addEventListener("change", cambioArchivosInput);
+
   imagenMaquina.addEventListener("click", () => {
     cambiarImagen();
-    imagenesAleatorias();
+    girarImagenes();
+
+    setTimeout(() => {
+      const resultadoImagenes = imagenesAleatorias();
+      mostrarResultadoPopup(resultadoImagenes);
+    }, 4000); 
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.code === "Space") {
+      cambiarImagen();
+      girarImagenes();
+
+      setTimeout(() => {
+        const resultadoImagenes = imagenesAleatorias();
+        mostrarResultadoPopup(resultadoImagenes);
+      }, 4000);
+    }
   });
 });
